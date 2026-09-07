@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="todo-app">
+        <h1>To-Do List</h1>
+
+        <form id="taskForm" class="input-area">
+            <input id="taskInput" type="text"
+                   placeholder="Call Sarah tomorrow at 3pm" required>
+            <select id="priority">
+                <option value="1">P1 — High</option>
+                <option value="2" selected>P2 — Medium</option>     
+                <option value="3">P3 — Low</option>
+                <option value="4">P4 — Optional</option>
+            </select>
+            <select id="recurrence">
+                <option value="">No repeat</option>
+                <option value="weekday">Every weekday</option>
+                <option value="weekly">Every week</option>
+                <option value="monthly-first">First Monday monthly</option>
+                <option value="after-10">10 days after completion</option>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+
+        <ul id="taskList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
